@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "IdX_backend": {
+      "main": "src/IdX_backend/main.mo",
+      "type": "motoko"
+    },
+    "IdX_frontend": {
+      "dependencies": [
+        "IdX_backend"
+      ],
+      "source": [
+        "src/IdX_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "IdX_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
